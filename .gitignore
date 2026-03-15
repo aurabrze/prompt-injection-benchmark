@@ -1,0 +1,12 @@
+results/
+*.gguf
+*.bin
+__pycache__/
+*.pyc
+*.pyo
+.env
+.DS_Store
+Thumbs.db
+*.key
+*.token
+secrets.json
