@@ -1,12 +1,21 @@
+# Results — can be large and contain full model responses
 results/
+ 
+# Never commit model weight files
 *.gguf
 *.bin
+ 
+# Python
 __pycache__/
 *.pyc
 *.pyo
 .env
+ 
+# OS
 .DS_Store
 Thumbs.db
+ 
+# Secrets
 *.key
 *.token
 secrets.json
