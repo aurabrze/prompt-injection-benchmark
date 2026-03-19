@@ -569,7 +569,7 @@ def perform_warmup_and_check(
             "messages": [{"role": "user", "content": probe}],
             "options": opts,
         }
-        r = requests.post(OLLAMA_CHAT_API, json=payload, timeout=120)
+        r = requests.post(OLLAMA_CHAT_API, json=payload, timeout=300)
         r.raise_for_status()
         return r.json()["message"]["content"].strip()
 
